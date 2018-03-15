@@ -1,3 +1,20 @@
+COLOR_MESSAGE_START := bf1d1d
+COLOR_MESSAGE_END := 400909
+COLOR_INACTIVE_START := 787878
+COLOR_INACTIVE_END := 474747
+COLOR_TRAY_ACTIVE_INVERTED_RING := f2f2f2
+COLOR_TRAY_ACTIVE_INVERTED_GLOBE := 27ae60
+COLOR_TRAY_ACTIVE_RING := 4d4d4d
+COLOR_TRAY_ACTIVE_GLOBE := 27ae60
+COLOR_TRAY_INACTIVE_INVERTED_RING := 6c6c6c
+COLOR_TRAY_INACTIVE_INVERTED_GLOBE := da4453
+COLOR_TRAY_INACTIVE_RING := a6a6a6
+COLOR_TRAY_INACTIVE_GLOBE := da4453
+COLOR_TRAY_MESSAGE_INVERTED_RING := bf1d1d
+COLOR_TRAY_MESSAGE_INVERTED_GLOBE := bf1d1d
+COLOR_TRAY_MESSAGE_RING := ff0000
+COLOR_TRAY_MESSAGE_GLOBE := ff0000
+
 .PHONY: all
 all: android desktop web
 
@@ -108,7 +125,38 @@ breeze: \
  out/desktop/icons/extra-icons/breeze/apps/32/quassel.svg \
  out/desktop/icons/extra-icons/breeze/apps/48/quassel.svg \
  out/desktop/icons/extra-icons/breeze/apps/64/quassel.svg \
+ out/desktop/icons/extra-icons/breeze/status/24/active-quassel-tray-inverted.svg \
+ out/desktop/icons/extra-icons/breeze/status/24/active-quassel-tray.svg \
+ out/desktop/icons/extra-icons/breeze/status/24/inactive-quassel-tray-inverted.svg \
+ out/desktop/icons/extra-icons/breeze/status/24/inactive-quassel-tray.svg \
+ out/desktop/icons/extra-icons/breeze/status/24/inactive-quassel.svg \
+ out/desktop/icons/extra-icons/breeze/status/24/message-quassel-tray-inverted.svg \
+ out/desktop/icons/extra-icons/breeze/status/24/message-quassel-tray.svg \
+ out/desktop/icons/extra-icons/breeze/status/24/message-quassel.svg \
+ out/desktop/icons/extra-icons/breeze/status/64/active-quassel-tray-inverted.svg \
+ out/desktop/icons/extra-icons/breeze/status/64/active-quassel-tray.svg \
+ out/desktop/icons/extra-icons/breeze/status/64/inactive-quassel-tray-inverted.svg \
+ out/desktop/icons/extra-icons/breeze/status/64/inactive-quassel-tray.svg \
+ out/desktop/icons/extra-icons/breeze/status/64/inactive-quassel.svg \
+ out/desktop/icons/extra-icons/breeze/status/64/message-quassel-tray-inverted.svg \
+ out/desktop/icons/extra-icons/breeze/status/64/message-quassel-tray.svg \
+ out/desktop/icons/extra-icons/breeze/status/64/message-quassel.svg \
+ out/desktop/icons/extra-icons/breeze/scalable/status/active-quassel-tray-inverted.svg \
+ out/desktop/icons/extra-icons/breeze/scalable/status/active-quassel-tray.svg \
+ out/desktop/icons/extra-icons/breeze/scalable/status/inactive-quassel-tray-inverted.svg \
+ out/desktop/icons/extra-icons/breeze/scalable/status/inactive-quassel-tray.svg \
+ out/desktop/icons/extra-icons/breeze/scalable/status/inactive-quassel.svg \
+ out/desktop/icons/extra-icons/breeze/scalable/status/message-quassel-tray-inverted.svg \
+ out/desktop/icons/extra-icons/breeze/scalable/status/message-quassel-tray.svg \
+ out/desktop/icons/extra-icons/breeze/scalable/status/message-quassel.svg \
  out/desktop/icons/extra-icons/breeze/scalable/apps/quassel.svg \
+ out/desktop/icons/extra-icons/breeze/scalable/status/active-quassel-tray-inverted.svg \
+ out/desktop/icons/extra-icons/breeze/scalable/status/active-quassel-tray.svg \
+ out/desktop/icons/extra-icons/breeze/scalable/status/inactive-quassel-tray-inverted.svg \
+ out/desktop/icons/extra-icons/breeze/scalable/status/inactive-quassel-tray.svg \
+ out/desktop/icons/extra-icons/breeze/scalable/status/inactive-quassel.svg \
+ out/desktop/icons/extra-icons/breeze/scalable/status/message-quassel-tray-inverted.svg \
+ out/desktop/icons/extra-icons/breeze/scalable/status/message-quassel-tray.svg \
  out/desktop/icons/extra-icons/breeze/scalable/status/message-quassel.svg
 
 .PHONY: breezedark
@@ -116,7 +164,38 @@ breezedark: \
  out/desktop/icons/extra-icons/breezedark/apps/32/quassel.svg \
  out/desktop/icons/extra-icons/breezedark/apps/48/quassel.svg \
  out/desktop/icons/extra-icons/breezedark/apps/64/quassel.svg \
+ out/desktop/icons/extra-icons/breezedark/status/24/active-quassel-tray-inverted.svg \
+ out/desktop/icons/extra-icons/breezedark/status/24/active-quassel-tray.svg \
+ out/desktop/icons/extra-icons/breezedark/status/24/inactive-quassel-tray-inverted.svg \
+ out/desktop/icons/extra-icons/breezedark/status/24/inactive-quassel-tray.svg \
+ out/desktop/icons/extra-icons/breezedark/status/24/inactive-quassel.svg \
+ out/desktop/icons/extra-icons/breezedark/status/24/message-quassel-tray-inverted.svg \
+ out/desktop/icons/extra-icons/breezedark/status/24/message-quassel-tray.svg \
+ out/desktop/icons/extra-icons/breezedark/status/24/message-quassel.svg \
+ out/desktop/icons/extra-icons/breezedark/status/64/active-quassel-tray-inverted.svg \
+ out/desktop/icons/extra-icons/breezedark/status/64/active-quassel-tray.svg \
+ out/desktop/icons/extra-icons/breezedark/status/64/inactive-quassel-tray-inverted.svg \
+ out/desktop/icons/extra-icons/breezedark/status/64/inactive-quassel-tray.svg \
+ out/desktop/icons/extra-icons/breezedark/status/64/inactive-quassel.svg \
+ out/desktop/icons/extra-icons/breezedark/status/64/message-quassel-tray-inverted.svg \
+ out/desktop/icons/extra-icons/breezedark/status/64/message-quassel-tray.svg \
+ out/desktop/icons/extra-icons/breezedark/status/64/message-quassel.svg \
+ out/desktop/icons/extra-icons/breezedark/scalable/status/active-quassel-tray-inverted.svg \
+ out/desktop/icons/extra-icons/breezedark/scalable/status/active-quassel-tray.svg \
+ out/desktop/icons/extra-icons/breezedark/scalable/status/inactive-quassel-tray-inverted.svg \
+ out/desktop/icons/extra-icons/breezedark/scalable/status/inactive-quassel-tray.svg \
+ out/desktop/icons/extra-icons/breezedark/scalable/status/inactive-quassel.svg \
+ out/desktop/icons/extra-icons/breezedark/scalable/status/message-quassel-tray-inverted.svg \
+ out/desktop/icons/extra-icons/breezedark/scalable/status/message-quassel-tray.svg \
+ out/desktop/icons/extra-icons/breezedark/scalable/status/message-quassel.svg \
  out/desktop/icons/extra-icons/breezedark/scalable/apps/quassel.svg \
+ out/desktop/icons/extra-icons/breezedark/scalable/status/active-quassel-tray-inverted.svg \
+ out/desktop/icons/extra-icons/breezedark/scalable/status/active-quassel-tray.svg \
+ out/desktop/icons/extra-icons/breezedark/scalable/status/inactive-quassel-tray-inverted.svg \
+ out/desktop/icons/extra-icons/breezedark/scalable/status/inactive-quassel-tray.svg \
+ out/desktop/icons/extra-icons/breezedark/scalable/status/inactive-quassel.svg \
+ out/desktop/icons/extra-icons/breezedark/scalable/status/message-quassel-tray-inverted.svg \
+ out/desktop/icons/extra-icons/breezedark/scalable/status/message-quassel-tray.svg \
  out/desktop/icons/extra-icons/breezedark/scalable/status/message-quassel.svg
 
 .PHONY: oxygen
@@ -124,7 +203,38 @@ oxygen: \
  out/desktop/icons/extra-icons/oxygen/apps/32/quassel.svg \
  out/desktop/icons/extra-icons/oxygen/apps/48/quassel.svg \
  out/desktop/icons/extra-icons/oxygen/apps/64/quassel.svg \
+ out/desktop/icons/extra-icons/oxygen/status/24/active-quassel-tray-inverted.svg \
+ out/desktop/icons/extra-icons/oxygen/status/24/active-quassel-tray.svg \
+ out/desktop/icons/extra-icons/oxygen/status/24/inactive-quassel-tray-inverted.svg \
+ out/desktop/icons/extra-icons/oxygen/status/24/inactive-quassel-tray.svg \
+ out/desktop/icons/extra-icons/oxygen/status/24/inactive-quassel.svg \
+ out/desktop/icons/extra-icons/oxygen/status/24/message-quassel-tray-inverted.svg \
+ out/desktop/icons/extra-icons/oxygen/status/24/message-quassel-tray.svg \
+ out/desktop/icons/extra-icons/oxygen/status/24/message-quassel.svg \
+ out/desktop/icons/extra-icons/oxygen/status/64/active-quassel-tray-inverted.svg \
+ out/desktop/icons/extra-icons/oxygen/status/64/active-quassel-tray.svg \
+ out/desktop/icons/extra-icons/oxygen/status/64/inactive-quassel-tray-inverted.svg \
+ out/desktop/icons/extra-icons/oxygen/status/64/inactive-quassel-tray.svg \
+ out/desktop/icons/extra-icons/oxygen/status/64/inactive-quassel.svg \
+ out/desktop/icons/extra-icons/oxygen/status/64/message-quassel-tray-inverted.svg \
+ out/desktop/icons/extra-icons/oxygen/status/64/message-quassel-tray.svg \
+ out/desktop/icons/extra-icons/oxygen/status/64/message-quassel.svg \
+ out/desktop/icons/extra-icons/oxygen/scalable/status/active-quassel-tray-inverted.svg \
+ out/desktop/icons/extra-icons/oxygen/scalable/status/active-quassel-tray.svg \
+ out/desktop/icons/extra-icons/oxygen/scalable/status/inactive-quassel-tray-inverted.svg \
+ out/desktop/icons/extra-icons/oxygen/scalable/status/inactive-quassel-tray.svg \
+ out/desktop/icons/extra-icons/oxygen/scalable/status/inactive-quassel.svg \
+ out/desktop/icons/extra-icons/oxygen/scalable/status/message-quassel-tray-inverted.svg \
+ out/desktop/icons/extra-icons/oxygen/scalable/status/message-quassel-tray.svg \
+ out/desktop/icons/extra-icons/oxygen/scalable/status/message-quassel.svg \
  out/desktop/icons/extra-icons/oxygen/scalable/apps/quassel.svg \
+ out/desktop/icons/extra-icons/oxygen/scalable/status/active-quassel-tray-inverted.svg \
+ out/desktop/icons/extra-icons/oxygen/scalable/status/active-quassel-tray.svg \
+ out/desktop/icons/extra-icons/oxygen/scalable/status/inactive-quassel-tray-inverted.svg \
+ out/desktop/icons/extra-icons/oxygen/scalable/status/inactive-quassel-tray.svg \
+ out/desktop/icons/extra-icons/oxygen/scalable/status/inactive-quassel.svg \
+ out/desktop/icons/extra-icons/oxygen/scalable/status/message-quassel-tray-inverted.svg \
+ out/desktop/icons/extra-icons/oxygen/scalable/status/message-quassel-tray.svg \
  out/desktop/icons/extra-icons/oxygen/scalable/status/message-quassel.svg
 
 out/desktop/icons/extra-icons/%/apps/32/quassel.svg: logo.kde.svg
@@ -146,26 +256,165 @@ out/desktop/icons/extra-icons/%/scalable/apps/quassel.svg: logo.kde.svg
 	mkdir -p $(@D)
 	cat $< \
 	> $@
-
+out/desktop/icons/extra-icons/%/status/24/active-quassel-tray-inverted.svg: status.active.svg
+	mkdir -p $(@D)
+	cat $< \
+	| sed -r 's/(id="ring")/\1 fill="#$(COLOR_TRAY_ACTIVE_INVERTED_RING)"/' \
+	| sed -r 's/(id="globe")/\1 fill="#$(COLOR_TRAY_ACTIVE_INVERTED_GLOBE)"/' \
+	| sed -r 's/(<svg.*)(>)/\1 width="24px" height="24px"\2/' \
+	> $@
+out/desktop/icons/extra-icons/%/status/24/active-quassel-tray.svg: status.active.svg
+	mkdir -p $(@D)
+	cat $< \
+	| sed -r 's/(id="ring")/\1 fill="#$(COLOR_TRAY_ACTIVE_RING)"/' \
+	| sed -r 's/(id="globe")/\1 fill="#$(COLOR_TRAY_ACTIVE_GLOBE)"/' \
+	| sed -r 's/(<svg.*)(>)/\1 width="24px" height="24px"\2/' \
+	> $@
+out/desktop/icons/extra-icons/%/status/24/inactive-quassel-tray-inverted.svg: status.inactive.svg
+	mkdir -p $(@D)
+	cat $< \
+	| sed -r 's/(id="ring")/\1 fill="#$(COLOR_TRAY_INACTIVE_INVERTED_RING)"/' \
+	| sed -r 's/(id="globe")/\1 fill="#$(COLOR_TRAY_INACTIVE_INVERTED_GLOBE)"/' \
+	| sed -r 's/(<svg.*)(>)/\1 width="24px" height="24px"\2/' \
+	> $@
+out/desktop/icons/extra-icons/%/status/24/inactive-quassel-tray.svg: status.inactive.svg
+	mkdir -p $(@D)
+	cat $< \
+	| sed -r 's/(id="ring")/\1 fill="#$(COLOR_TRAY_INACTIVE_RING)"/' \
+	| sed -r 's/(id="globe")/\1 fill="#$(COLOR_TRAY_INACTIVE_GLOBE)"/' \
+	| sed -r 's/(<svg.*)(>)/\1 width="24px" height="24px"\2/' \
+	> $@
+out/desktop/icons/extra-icons/%/status/24/inactive-quassel.svg: logo.kde.svg
+	mkdir -p $(@D)
+	cat $< \
+	| sed -r 's/(id="gradientBackgroundStart" stop-color=)"#[0-9a-fA-F]{0,6}"/\1"#$(COLOR_INACTIVE_START)"/' \
+	| sed -r 's/(id="gradientBackgroundEnd" stop-color=)"#[0-9a-fA-F]{0,6}"/\1"#$(COLOR_INACTIVE_END)"/' \
+	| sed -r 's/(<svg.*)(>)/\1 width="24px" height="24px"\2/' \
+	> $@
+out/desktop/icons/extra-icons/%/status/24/message-quassel-tray-inverted.svg: status.inactive.svg
+	mkdir -p $(@D)
+	cat $< \
+	| sed -r 's/(id="ring")/\1 fill="#$(COLOR_TRAY_MESSAGE_INVERTED_RING)"/' \
+	| sed -r 's/(id="globe")/\1 fill="#$(COLOR_TRAY_MESSAGE_INVERTED_GLOBE)"/' \
+	| sed -r 's/(<svg.*)(>)/\1 width="24px" height="24px"\2/' \
+	> $@
+out/desktop/icons/extra-icons/%/status/24/message-quassel-tray.svg: status.message.svg
+	mkdir -p $(@D)
+	cat $< \
+	| sed -r 's/(id="ring")/\1 fill="#$(COLOR_TRAY_MESSAGE_RING)"/' \
+	| sed -r 's/(id="globe")/\1 fill="#$(COLOR_TRAY_MESSAGE_GLOBE)"/' \
+	| sed -r 's/(<svg.*)(>)/\1 width="24px" height="24px"\2/' \
+	> $@
 out/desktop/icons/extra-icons/%/status/24/message-quassel.svg: logo.kde.svg
 	mkdir -p $(@D)
 	cat $< \
-	| sed -r 's/(id="gradientBackgroundStart" stop-color=)"#[0-9a-fA-F]{0,6}"/\1"#bf1d1d"/' \
-	| sed -r 's/(id="gradientBackgroundEnd" stop-color=)"#[0-9a-fA-F]{0,6}"/\1"#400909"/' \
+	| sed -r 's/(id="gradientBackgroundStart" stop-color=)"#[0-9a-fA-F]{0,6}"/\1"#$(COLOR_MESSAGE_START)"/' \
+	| sed -r 's/(id="gradientBackgroundEnd" stop-color=)"#[0-9a-fA-F]{0,6}"/\1"#$(COLOR_MESSAGE_END)"/' \
 	| sed -r 's/(<svg.*)(>)/\1 width="24px" height="24px"\2/' \
+	> $@
+out/desktop/icons/extra-icons/%/status/64/active-quassel-tray-inverted.svg: status.active.svg
+	mkdir -p $(@D)
+	cat $< \
+	| sed -r 's/(id="ring")/\1 fill="#$(COLOR_TRAY_ACTIVE_INVERTED_RING)"/' \
+	| sed -r 's/(id="globe")/\1 fill="#$(COLOR_TRAY_ACTIVE_INVERTED_GLOBE)"/' \
+	| sed -r 's/(<svg.*)(>)/\1 width="64px" height="64px"\2/' \
+	> $@
+out/desktop/icons/extra-icons/%/status/64/active-quassel-tray.svg: status.active.svg
+	mkdir -p $(@D)
+	cat $< \
+	| sed -r 's/(id="ring")/\1 fill="#$(COLOR_TRAY_ACTIVE_RING)"/' \
+	| sed -r 's/(id="globe")/\1 fill="#$(COLOR_TRAY_ACTIVE_GLOBE)"/' \
+	| sed -r 's/(<svg.*)(>)/\1 width="64px" height="64px"\2/' \
+	> $@
+out/desktop/icons/extra-icons/%/status/64/inactive-quassel-tray-inverted.svg: status.inactive.svg
+	mkdir -p $(@D)
+	cat $< \
+	| sed -r 's/(id="ring")/\1 fill="#$(COLOR_TRAY_INACTIVE_INVERTED_RING)"/' \
+	| sed -r 's/(id="globe")/\1 fill="#$(COLOR_TRAY_INACTIVE_INVERTED_GLOBE)"/' \
+	| sed -r 's/(<svg.*)(>)/\1 width="64px" height="64px"\2/' \
+	> $@
+out/desktop/icons/extra-icons/%/status/64/inactive-quassel-tray.svg: status.inactive.svg
+	mkdir -p $(@D)
+	cat $< \
+	| sed -r 's/(id="ring")/\1 fill="#$(COLOR_TRAY_INACTIVE_RING)"/' \
+	| sed -r 's/(id="globe")/\1 fill="#$(COLOR_TRAY_INACTIVE_GLOBE)"/' \
+	| sed -r 's/(<svg.*)(>)/\1 width="64px" height="64px"\2/' \
+	> $@
+out/desktop/icons/extra-icons/%/status/64/inactive-quassel.svg: logo.kde.svg
+	mkdir -p $(@D)
+	cat $< \
+	| sed -r 's/(id="gradientBackgroundStart" stop-color=)"#[0-9a-fA-F]{0,6}"/\1"#$(COLOR_INACTIVE_START)"/' \
+	| sed -r 's/(id="gradientBackgroundEnd" stop-color=)"#[0-9a-fA-F]{0,6}"/\1"#$(COLOR_INACTIVE_END)"/' \
+	| sed -r 's/(<svg.*)(>)/\1 width="64px" height="64px"\2/' \
+	> $@
+out/desktop/icons/extra-icons/%/status/64/message-quassel-tray-inverted.svg: status.inactive.svg
+	mkdir -p $(@D)
+	cat $< \
+	| sed -r 's/(id="ring")/\1 fill="#$(COLOR_TRAY_MESSAGE_INVERTED_RING)"/' \
+	| sed -r 's/(id="globe")/\1 fill="#$(COLOR_TRAY_MESSAGE_INVERTED_GLOBE)"/' \
+	| sed -r 's/(<svg.*)(>)/\1 width="64px" height="64px"\2/' \
+	> $@
+out/desktop/icons/extra-icons/%/status/64/message-quassel-tray.svg: status.message.svg
+	mkdir -p $(@D)
+	cat $< \
+	| sed -r 's/(id="ring")/\1 fill="#$(COLOR_TRAY_MESSAGE_RING)"/' \
+	| sed -r 's/(id="globe")/\1 fill="#$(COLOR_TRAY_MESSAGE_GLOBE)"/' \
+	| sed -r 's/(<svg.*)(>)/\1 width="64px" height="64px"\2/' \
 	> $@
 out/desktop/icons/extra-icons/%/status/64/message-quassel.svg: logo.kde.svg
 	mkdir -p $(@D)
 	cat $< \
-	| sed -r 's/(id="gradientBackgroundStart" stop-color=)"#[0-9a-fA-F]{0,6}"/\1"#bf1d1d"/' \
-	| sed -r 's/(id="gradientBackgroundEnd" stop-color=)"#[0-9a-fA-F]{0,6}"/\1"#400909"/' \
+	| sed -r 's/(id="gradientBackgroundStart" stop-color=)"#[0-9a-fA-F]{0,6}"/\1"#$(COLOR_MESSAGE_START)"/' \
+	| sed -r 's/(id="gradientBackgroundEnd" stop-color=)"#[0-9a-fA-F]{0,6}"/\1"#$(COLOR_MESSAGE_END)"/' \
 	| sed -r 's/(<svg.*)(>)/\1 width="64px" height="64px"\2/' \
+	> $@
+out/desktop/icons/extra-icons/%/scalable/status/active-quassel-tray-inverted.svg: status.active.svg
+	mkdir -p $(@D)
+	cat $< \
+	| sed -r 's/(id="ring")/\1 fill="#$(COLOR_TRAY_ACTIVE_INVERTED_RING)"/' \
+	| sed -r 's/(id="globe")/\1 fill="#$(COLOR_TRAY_ACTIVE_INVERTED_GLOBE)"/' \
+	> $@
+out/desktop/icons/extra-icons/%/scalable/status/active-quassel-tray.svg: status.active.svg
+	mkdir -p $(@D)
+	cat $< \
+	| sed -r 's/(id="ring")/\1 fill="#$(COLOR_TRAY_ACTIVE_RING)"/' \
+	| sed -r 's/(id="globe")/\1 fill="#$(COLOR_TRAY_ACTIVE_GLOBE)"/' \
+	> $@
+out/desktop/icons/extra-icons/%/scalable/status/inactive-quassel-tray-inverted.svg: status.inactive.svg
+	mkdir -p $(@D)
+	cat $< \
+	| sed -r 's/(id="ring")/\1 fill="#$(COLOR_TRAY_INACTIVE_INVERTED_RING)"/' \
+	| sed -r 's/(id="globe")/\1 fill="#$(COLOR_TRAY_INACTIVE_INVERTED_GLOBE)"/' \
+	> $@
+out/desktop/icons/extra-icons/%/scalable/status/inactive-quassel-tray.svg: status.inactive.svg
+	mkdir -p $(@D)
+	cat $< \
+	| sed -r 's/(id="ring")/\1 fill="#$(COLOR_TRAY_INACTIVE_RING)"/' \
+	| sed -r 's/(id="globe")/\1 fill="#$(COLOR_TRAY_INACTIVE_GLOBE)"/' \
+	> $@
+out/desktop/icons/extra-icons/%/scalable/status/inactive-quassel.svg: logo.kde.svg
+	mkdir -p $(@D)
+	cat $< \
+	| sed -r 's/(id="gradientBackgroundStart" stop-color=)"#[0-9a-fA-F]{0,6}"/\1"#$(COLOR_INACTIVE_START)"/' \
+	| sed -r 's/(id="gradientBackgroundEnd" stop-color=)"#[0-9a-fA-F]{0,6}"/\1"#$(COLOR_INACTIVE_END)"/' \
+	> $@
+out/desktop/icons/extra-icons/%/scalable/status/message-quassel-tray-inverted.svg: status.inactive.svg
+	mkdir -p $(@D)
+	cat $< \
+	| sed -r 's/(id="ring")/\1 fill="#$(COLOR_TRAY_MESSAGE_INVERTED_RING)"/' \
+	| sed -r 's/(id="globe")/\1 fill="#$(COLOR_TRAY_MESSAGE_INVERTED_GLOBE)"/' \
+	> $@
+out/desktop/icons/extra-icons/%/scalable/status/message-quassel-tray.svg: status.message.svg
+	mkdir -p $(@D)
+	cat $< \
+	| sed -r 's/(id="ring")/\1 fill="#$(COLOR_TRAY_MESSAGE_RING)"/' \
+	| sed -r 's/(id="globe")/\1 fill="#$(COLOR_TRAY_MESSAGE_GLOBE)"/' \
 	> $@
 out/desktop/icons/extra-icons/%/scalable/status/message-quassel.svg: logo.kde.svg
 	mkdir -p $(@D)
 	cat $< \
-	| sed -r 's/(id="gradientBackgroundStart" stop-color=)"#[0-9a-fA-F]{0,6}"/\1"#bf1d1d"/' \
-	| sed -r 's/(id="gradientBackgroundEnd" stop-color=)"#[0-9a-fA-F]{0,6}"/\1"#400909"/' \
+	| sed -r 's/(id="gradientBackgroundStart" stop-color=)"#[0-9a-fA-F]{0,6}"/\1"#$(COLOR_MESSAGE_START)"/' \
+	| sed -r 's/(id="gradientBackgroundEnd" stop-color=)"#[0-9a-fA-F]{0,6}"/\1"#$(COLOR_MESSAGE_END)"/' \
 	> $@
 
 .PHONY: hicolor
