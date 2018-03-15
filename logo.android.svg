@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108 108" version="1.1">
   <defs>
+    <linearGradient id="gradientBackground" x2="5" gradientUnits="userSpaceOnUse" y2="103">
+      <stop id="gradientBackgroundStart" stop-color="#2883f2" offset="0"/>
+      <stop id="gradientBackgroundEnd" stop-color="#0c56b2" offset="1"/>
+    </linearGradient>
     <radialGradient id="gradientLongShadow" r="54" cx="54" cy="54" gradientUnits="userSpaceOnUse">
       <stop stop-color="#1a237e" stop-opacity="0.2" offset="0.5"/>
       <stop stop-color="#1a237e" stop-opacity="0" offset="1"/>
-    </radialGradient>
-    
+    </radialGradient>    
     <radialGradient id="gradientFinish" gradientUnits="userSpaceOnUse" cy="0" cx="0" r="108">
     <stop stop-color="#fff" stop-opacity="0.1" offset="0"/>
     <stop stop-color="#fff" stop-opacity="0" offset="1"/>
@@ -15,7 +18,7 @@
     </filter>
   </defs>
   <path filter="url(#blurShadow)" fill-opacity="0.2" fill="#263238" d="M99 100.5 v-78 a 4,4 0 0,0 -4,-4 h-82 a 4,4 0 0,0 -4,4 v56.5 a 4,4 0 0,0 4,4 h68 Z" />
-  <path fill="#0a70c0" d="M99 99.5 v-78 a 4,4 0 0,0 -4,-4 h-82 a 4,4 0 0,0 -4,4 v56.5 a 4,4 0 0,0 4,4 h68 Z" />
+  <path fill="url(#gradientBackground)" d="M99 99.5 v-78 a 4,4 0 0,0 -4,-4 h-82 a 4,4 0 0,0 -4,4 v56.5 a 4,4 0 0,0 4,4 h68 Z" />
   <path fill-opacity=".2" fill="#263238" d="M9 78 a 4,4 0 0,0 4,4 h68 l18,17.5 v-1 l -18,-17.5 h-68 a 4,4 0 0,1 -4,-4 Z" />
   <path fill-opacity=".2" fill="#ffffff" d="M99 21.5 a 4,4 0 0,0 -4,-4 h-82 a 4,4 0 0,0 -4,4 v1 a 4,4 0 0,1 4,-4 h82 a 4,4 0 0,1 4,4 Z" />
   <path fill="url(#gradientLongShadow)" d="M34.91 68.09 A 27,27 0 0,1 73.09,29.91 L 99,55.82 99,99.5 81,82 48.82,82" />
