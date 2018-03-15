@@ -2,8 +2,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108 108" version="1.1">
   <defs>
     <linearGradient id="gradientBackground" x2="5" gradientUnits="userSpaceOnUse" y2="103">
-      <stop id="gradientBackgroundStart" stop-color="#115570" offset="0"/>
-      <stop id="gradientBackgroundEnd" stop-color="#092240" offset="1"/>
+      <stop id="gradientBackgroundStart" stop-color="#2883f2" offset="0"/>
+      <stop id="gradientBackgroundEnd" stop-color="#0c56b2" offset="1"/>
     </linearGradient>
     <linearGradient id="gradientLongShadow" y2="5" gradientUnits="userSpaceOnUse" y1="5" x2="103" x1="5">
       <stop stop-color="#1a237e" stop-opacity=".25" offset="0"/>
