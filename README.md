@@ -5,6 +5,7 @@
 * GNU make
 * Inkscape
 * sed
+* ImageMagick
 
 ## Generating assets
 
