@@ -105,63 +105,63 @@ desktop: \
 
 .PHONY: breeze
 breeze: \
- out/desktop/extra-icons/breeze/apps/32/quassel.svg \
- out/desktop/extra-icons/breeze/apps/48/quassel.svg \
- out/desktop/extra-icons/breeze/apps/64/quassel.svg \
- out/desktop/extra-icons/breeze/scalable/apps/quassel.svg \
- out/desktop/extra-icons/breeze/scalable/status/message-quassel.svg
+ out/desktop/icons/extra-icons/breeze/apps/32/quassel.svg \
+ out/desktop/icons/extra-icons/breeze/apps/48/quassel.svg \
+ out/desktop/icons/extra-icons/breeze/apps/64/quassel.svg \
+ out/desktop/icons/extra-icons/breeze/scalable/apps/quassel.svg \
+ out/desktop/icons/extra-icons/breeze/scalable/status/message-quassel.svg
 
 .PHONY: breezedark
 breezedark: \
- out/desktop/extra-icons/breezedark/apps/32/quassel.svg \
- out/desktop/extra-icons/breezedark/apps/48/quassel.svg \
- out/desktop/extra-icons/breezedark/apps/64/quassel.svg \
- out/desktop/extra-icons/breezedark/scalable/apps/quassel.svg \
- out/desktop/extra-icons/breezedark/scalable/status/message-quassel.svg
+ out/desktop/icons/extra-icons/breezedark/apps/32/quassel.svg \
+ out/desktop/icons/extra-icons/breezedark/apps/48/quassel.svg \
+ out/desktop/icons/extra-icons/breezedark/apps/64/quassel.svg \
+ out/desktop/icons/extra-icons/breezedark/scalable/apps/quassel.svg \
+ out/desktop/icons/extra-icons/breezedark/scalable/status/message-quassel.svg
 
 .PHONY: oxygen
 oxygen: \
- out/desktop/extra-icons/oxygen/apps/32/quassel.svg \
- out/desktop/extra-icons/oxygen/apps/48/quassel.svg \
- out/desktop/extra-icons/oxygen/apps/64/quassel.svg \
- out/desktop/extra-icons/oxygen/scalable/apps/quassel.svg \
- out/desktop/extra-icons/oxygen/scalable/status/message-quassel.svg
+ out/desktop/icons/extra-icons/oxygen/apps/32/quassel.svg \
+ out/desktop/icons/extra-icons/oxygen/apps/48/quassel.svg \
+ out/desktop/icons/extra-icons/oxygen/apps/64/quassel.svg \
+ out/desktop/icons/extra-icons/oxygen/scalable/apps/quassel.svg \
+ out/desktop/icons/extra-icons/oxygen/scalable/status/message-quassel.svg
 
-out/desktop/extra-icons/%/apps/32/quassel.svg: logo.kde.svg
+out/desktop/icons/extra-icons/%/apps/32/quassel.svg: logo.kde.svg
 	mkdir -p $(@D)
 	cat $< \
 	| sed -r 's/(<svg.*)(>)/\1 width="32px" height="32px"\2/' \
 	> $@
-out/desktop/extra-icons/%/apps/48/quassel.svg: logo.kde.svg
+out/desktop/icons/extra-icons/%/apps/48/quassel.svg: logo.kde.svg
 	mkdir -p $(@D)
 	cat $< \
 	| sed -r 's/(<svg.*)(>)/\1 width="48px" height="48px"\2/' \
 	> $@
-out/desktop/extra-icons/%/apps/64/quassel.svg: logo.kde.svg
+out/desktop/icons/extra-icons/%/apps/64/quassel.svg: logo.kde.svg
 	mkdir -p $(@D)
 	cat $< \
 	| sed -r 's/(<svg.*)(>)/\1 width="64px" height="64px"\2/' \
 	> $@
-out/desktop/extra-icons/%/scalable/apps/quassel.svg: logo.kde.svg
+out/desktop/icons/extra-icons/%/scalable/apps/quassel.svg: logo.kde.svg
 	mkdir -p $(@D)
 	cat $< \
 	> $@
 
-out/desktop/extra-icons/%/status/24/message-quassel.svg: logo.kde.svg
+out/desktop/icons/extra-icons/%/status/24/message-quassel.svg: logo.kde.svg
 	mkdir -p $(@D)
 	cat $< \
 	| sed -r 's/(id="gradientBackgroundStart" stop-color=)"#[0-9a-fA-F]{0,6}"/\1"#bf1d1d"/' \
 	| sed -r 's/(id="gradientBackgroundEnd" stop-color=)"#[0-9a-fA-F]{0,6}"/\1"#400909"/' \
 	| sed -r 's/(<svg.*)(>)/\1 width="24px" height="24px"\2/' \
 	> $@
-out/desktop/extra-icons/%/status/64/message-quassel.svg: logo.kde.svg
+out/desktop/icons/extra-icons/%/status/64/message-quassel.svg: logo.kde.svg
 	mkdir -p $(@D)
 	cat $< \
 	| sed -r 's/(id="gradientBackgroundStart" stop-color=)"#[0-9a-fA-F]{0,6}"/\1"#bf1d1d"/' \
 	| sed -r 's/(id="gradientBackgroundEnd" stop-color=)"#[0-9a-fA-F]{0,6}"/\1"#400909"/' \
 	| sed -r 's/(<svg.*)(>)/\1 width="64px" height="64px"\2/' \
 	> $@
-out/desktop/extra-icons/%/scalable/status/message-quassel.svg: logo.kde.svg
+out/desktop/icons/extra-icons/%/scalable/status/message-quassel.svg: logo.kde.svg
 	mkdir -p $(@D)
 	cat $< \
 	| sed -r 's/(id="gradientBackgroundStart" stop-color=)"#[0-9a-fA-F]{0,6}"/\1"#bf1d1d"/' \
@@ -170,29 +170,29 @@ out/desktop/extra-icons/%/scalable/status/message-quassel.svg: logo.kde.svg
 
 .PHONY: hicolor
 hicolor: \
- out/desktop/hicolor/128x128/apps/quassel.png \
- out/desktop/hicolor/64x64/apps/quassel.png \
- out/desktop/hicolor/48x48/apps/quassel.png \
- out/desktop/hicolor/32x32/apps/quassel.png \
- out/desktop/hicolor/22x22/apps/quassel.png \
- out/desktop/hicolor/16x16/apps/quassel.png
+ out/desktop/icons/hicolor/128x128/apps/quassel.png \
+ out/desktop/icons/hicolor/64x64/apps/quassel.png \
+ out/desktop/icons/hicolor/48x48/apps/quassel.png \
+ out/desktop/icons/hicolor/32x32/apps/quassel.png \
+ out/desktop/icons/hicolor/22x22/apps/quassel.png \
+ out/desktop/icons/hicolor/16x16/apps/quassel.png
 
-out/desktop/hicolor/128x128/apps/quassel.png: logo.kde.svg
+out/desktop/icons/hicolor/128x128/apps/quassel.png: logo.kde.svg
 	mkdir -p $(@D)
 	inkscape $< -w 128 -e $@
-out/desktop/hicolor/64x64/apps/quassel.png: logo.kde.svg
+out/desktop/icons/hicolor/64x64/apps/quassel.png: logo.kde.svg
 	mkdir -p $(@D)
 	inkscape $< -w 64 -e $@
-out/desktop/hicolor/48x48/apps/quassel.png: logo.kde.svg
+out/desktop/icons/hicolor/48x48/apps/quassel.png: logo.kde.svg
 	mkdir -p $(@D)
 	inkscape $< -w 48 -e $@
-out/desktop/hicolor/32x32/apps/quassel.png: logo.kde.svg
+out/desktop/icons/hicolor/32x32/apps/quassel.png: logo.kde.svg
 	mkdir -p $(@D)
 	inkscape $< -w 32 -e $@
-out/desktop/hicolor/22x22/apps/quassel.png: logo.kde.svg
+out/desktop/icons/hicolor/22x22/apps/quassel.png: logo.kde.svg
 	mkdir -p $(@D)
 	inkscape $< -w 22 -e $@
-out/desktop/hicolor/16x16/apps/quassel.png: logo.kde.svg
+out/desktop/icons/hicolor/16x16/apps/quassel.png: logo.kde.svg
 	mkdir -p $(@D)
 	inkscape $< -w 16 -e $@
 
