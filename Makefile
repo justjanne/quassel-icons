@@ -2,6 +2,10 @@ COLOR_BREEZE_MESSAGE_START := bf1d1d
 COLOR_BREEZE_MESSAGE_END := 400909
 COLOR_BREEZE_INACTIVE_START := 787878
 COLOR_BREEZE_INACTIVE_END := 474747
+COLOR_BREEZE_CONNECT_RING := 4d4d4d
+COLOR_BREEZE_CONNECT_GLOBE := 27ae60
+COLOR_BREEZE_DISCONNECT_RING := 4d4d4d
+COLOR_BREEZE_DISCONNECT_GLOBE := da4453
 COLOR_BREEZE_TRAY_ACTIVE_INVERTED_RING := f2f2f2
 COLOR_BREEZE_TRAY_ACTIVE_INVERTED_GLOBE := 27ae60
 COLOR_BREEZE_TRAY_ACTIVE_RING := 4d4d4d
@@ -19,6 +23,10 @@ COLOR_BREEZEDARK_MESSAGE_START := bf1d1d
 COLOR_BREEZEDARK_MESSAGE_END := 400909
 COLOR_BREEZEDARK_INACTIVE_START := 2883f2
 COLOR_BREEZEDARK_INACTIVE_END := 0b50a5
+COLOR_BREEZEDARK_CONNECT_RING := f2f2f2
+COLOR_BREEZEDARK_CONNECT_GLOBE := 27ae60
+COLOR_BREEZEDARK_DISCONNECT_RING := f2f2f2
+COLOR_BREEZEDARK_DISCONNECT_GLOBE := da4453
 COLOR_BREEZEDARK_TRAY_ACTIVE_INVERTED_RING := 4d4d4d
 COLOR_BREEZEDARK_TRAY_ACTIVE_INVERTED_GLOBE := 27ae60
 COLOR_BREEZEDARK_TRAY_ACTIVE_RING := f2f2f2
@@ -141,6 +149,13 @@ breeze: \
  out/desktop/icons/extra-icons/breeze/apps/32/quassel.svg \
  out/desktop/icons/extra-icons/breeze/apps/48/quassel.svg \
  out/desktop/icons/extra-icons/breeze/apps/64/quassel.svg \
+ out/desktop/icons/extra-icons/breeze/scalable/apps/quassel.svg \
+ out/desktop/icons/extra-icons/breeze/actions/24/connect-quassel.svg \
+ out/desktop/icons/extra-icons/breeze/actions/24/disconnect-quassel.svg \
+ out/desktop/icons/extra-icons/breeze/actions/32/connect-quassel.svg \
+ out/desktop/icons/extra-icons/breeze/actions/32/disconnect-quassel.svg \
+ out/desktop/icons/extra-icons/breeze/scalable/actions/connect-quassel.svg \
+ out/desktop/icons/extra-icons/breeze/scalable/actions/disconnect-quassel.svg \
  out/desktop/icons/extra-icons/breeze/status/24/active-quassel-tray-inverted.svg \
  out/desktop/icons/extra-icons/breeze/status/24/active-quassel-tray.svg \
  out/desktop/icons/extra-icons/breeze/status/24/inactive-quassel-tray-inverted.svg \
@@ -165,7 +180,6 @@ breeze: \
  out/desktop/icons/extra-icons/breeze/scalable/status/message-quassel-tray-inverted.svg \
  out/desktop/icons/extra-icons/breeze/scalable/status/message-quassel-tray.svg \
  out/desktop/icons/extra-icons/breeze/scalable/status/message-quassel.svg \
- out/desktop/icons/extra-icons/breeze/scalable/apps/quassel.svg \
  out/desktop/icons/extra-icons/breeze/scalable/status/active-quassel-tray-inverted.svg \
  out/desktop/icons/extra-icons/breeze/scalable/status/active-quassel-tray.svg \
  out/desktop/icons/extra-icons/breeze/scalable/status/inactive-quassel-tray-inverted.svg \
@@ -175,6 +189,7 @@ breeze: \
  out/desktop/icons/extra-icons/breeze/scalable/status/message-quassel-tray.svg \
  out/desktop/icons/extra-icons/breeze/scalable/status/message-quassel.svg
 
+# App icons
 out/desktop/icons/extra-icons/breeze/apps/32/quassel.svg: logo.kde.svg
 	mkdir -p $(@D)
 	cat $< \
@@ -194,6 +209,50 @@ out/desktop/icons/extra-icons/breeze/scalable/apps/quassel.svg: logo.kde.svg
 	mkdir -p $(@D)
 	cat $< \
 	> $@
+
+# Action icons
+out/desktop/icons/extra-icons/breeze/actions/24/connect-quassel.svg: action.connect.svg
+	mkdir -p $(@D)
+	cat $< \
+	| sed -r 's/(id="ring")/\1 fill="#$(COLOR_BREEZE_CONNECT_RING)"/' \
+	| sed -r 's/(id="globe")/\1 fill="#$(COLOR_BREEZE_CONNECT_GLOBE)"/' \
+	| sed -r 's/(<svg.*)(>)/\1 width="24px" height="24px"\2/' \
+	> $@
+out/desktop/icons/extra-icons/breeze/actions/24/disconnect-quassel.svg: action.disconnect.svg
+	mkdir -p $(@D)
+	cat $< \
+	| sed -r 's/(id="ring")/\1 fill="#$(COLOR_BREEZE_DISCONNECT_RING)"/' \
+	| sed -r 's/(id="globe")/\1 fill="#$(COLOR_BREEZE_DISCONNECT_GLOBE)"/' \
+	| sed -r 's/(<svg.*)(>)/\1 width="24px" height="24px"\2/' \
+	> $@
+out/desktop/icons/extra-icons/breeze/actions/32/connect-quassel.svg: action.connect.svg
+	mkdir -p $(@D)
+	cat $< \
+	| sed -r 's/(id="ring")/\1 fill="#$(COLOR_BREEZE_CONNECT_RING)"/' \
+	| sed -r 's/(id="globe")/\1 fill="#$(COLOR_BREEZE_CONNECT_GLOBE)"/' \
+	| sed -r 's/(<svg.*)(>)/\1 width="32px" height="32px"\2/' \
+	> $@
+out/desktop/icons/extra-icons/breeze/actions/32/disconnect-quassel.svg: action.disconnect.svg
+	mkdir -p $(@D)
+	cat $< \
+	| sed -r 's/(id="ring")/\1 fill="#$(COLOR_BREEZE_DISCONNECT_RING)"/' \
+	| sed -r 's/(id="globe")/\1 fill="#$(COLOR_BREEZE_DISCONNECT_GLOBE)"/' \
+	| sed -r 's/(<svg.*)(>)/\1 width="32px" height="32px"\2/' \
+	> $@
+out/desktop/icons/extra-icons/breeze/scalable/actions/connect-quassel.svg: action.connect.svg
+	mkdir -p $(@D)
+	cat $< \
+	| sed -r 's/(id="ring")/\1 fill="#$(COLOR_BREEZE_CONNECT_RING)"/' \
+	| sed -r 's/(id="globe")/\1 fill="#$(COLOR_BREEZE_CONNECT_GLOBE)"/' \
+	> $@
+out/desktop/icons/extra-icons/breeze/scalable/actions/disconnect-quassel.svg: action.disconnect.svg
+	mkdir -p $(@D)
+	cat $< \
+	| sed -r 's/(id="ring")/\1 fill="#$(COLOR_BREEZE_DISCONNECT_RING)"/' \
+	| sed -r 's/(id="globe")/\1 fill="#$(COLOR_BREEZE_DISCONNECT_GLOBE)"/' \
+	> $@
+
+# Status icons
 out/desktop/icons/extra-icons/breeze/status/24/active-quassel-tray-inverted.svg: status.active.svg
 	mkdir -p $(@D)
 	cat $< \
@@ -360,6 +419,13 @@ breezedark: \
  out/desktop/icons/extra-icons/breezedark/apps/32/quassel.svg \
  out/desktop/icons/extra-icons/breezedark/apps/48/quassel.svg \
  out/desktop/icons/extra-icons/breezedark/apps/64/quassel.svg \
+ out/desktop/icons/extra-icons/breezedark/scalable/apps/quassel.svg \
+ out/desktop/icons/extra-icons/breezedark/actions/24/connect-quassel.svg \
+ out/desktop/icons/extra-icons/breezedark/actions/24/disconnect-quassel.svg \
+ out/desktop/icons/extra-icons/breezedark/actions/32/connect-quassel.svg \
+ out/desktop/icons/extra-icons/breezedark/actions/32/disconnect-quassel.svg \
+ out/desktop/icons/extra-icons/breezedark/scalable/actions/connect-quassel.svg \
+ out/desktop/icons/extra-icons/breezedark/scalable/actions/disconnect-quassel.svg \
  out/desktop/icons/extra-icons/breezedark/status/24/active-quassel-tray-inverted.svg \
  out/desktop/icons/extra-icons/breezedark/status/24/active-quassel-tray.svg \
  out/desktop/icons/extra-icons/breezedark/status/24/inactive-quassel-tray-inverted.svg \
@@ -384,7 +450,6 @@ breezedark: \
  out/desktop/icons/extra-icons/breezedark/scalable/status/message-quassel-tray-inverted.svg \
  out/desktop/icons/extra-icons/breezedark/scalable/status/message-quassel-tray.svg \
  out/desktop/icons/extra-icons/breezedark/scalable/status/message-quassel.svg \
- out/desktop/icons/extra-icons/breezedark/scalable/apps/quassel.svg \
  out/desktop/icons/extra-icons/breezedark/scalable/status/active-quassel-tray-inverted.svg \
  out/desktop/icons/extra-icons/breezedark/scalable/status/active-quassel-tray.svg \
  out/desktop/icons/extra-icons/breezedark/scalable/status/inactive-quassel-tray-inverted.svg \
@@ -394,6 +459,7 @@ breezedark: \
  out/desktop/icons/extra-icons/breezedark/scalable/status/message-quassel-tray.svg \
  out/desktop/icons/extra-icons/breezedark/scalable/status/message-quassel.svg
 
+# App icons
 out/desktop/icons/extra-icons/breezedark/apps/32/quassel.svg: logo.kde.svg
 	mkdir -p $(@D)
 	cat $< \
@@ -413,6 +479,50 @@ out/desktop/icons/extra-icons/breezedark/scalable/apps/quassel.svg: logo.kde.svg
 	mkdir -p $(@D)
 	cat $< \
 	> $@
+
+# Action icons
+out/desktop/icons/extra-icons/breezedark/actions/24/connect-quassel.svg: action.connect.svg
+	mkdir -p $(@D)
+	cat $< \
+	| sed -r 's/(id="ring")/\1 fill="#$(COLOR_BREEZEDARK_CONNECT_RING)"/' \
+	| sed -r 's/(id="globe")/\1 fill="#$(COLOR_BREEZEDARK_CONNECT_GLOBE)"/' \
+	| sed -r 's/(<svg.*)(>)/\1 width="24px" height="24px"\2/' \
+	> $@
+out/desktop/icons/extra-icons/breezedark/actions/24/disconnect-quassel.svg: action.disconnect.svg
+	mkdir -p $(@D)
+	cat $< \
+	| sed -r 's/(id="ring")/\1 fill="#$(COLOR_BREEZEDARK_DISCONNECT_RING)"/' \
+	| sed -r 's/(id="globe")/\1 fill="#$(COLOR_BREEZEDARK_DISCONNECT_GLOBE)"/' \
+	| sed -r 's/(<svg.*)(>)/\1 width="24px" height="24px"\2/' \
+	> $@
+out/desktop/icons/extra-icons/breezedark/actions/32/connect-quassel.svg: action.connect.svg
+	mkdir -p $(@D)
+	cat $< \
+	| sed -r 's/(id="ring")/\1 fill="#$(COLOR_BREEZEDARK_CONNECT_RING)"/' \
+	| sed -r 's/(id="globe")/\1 fill="#$(COLOR_BREEZEDARK_CONNECT_GLOBE)"/' \
+	| sed -r 's/(<svg.*)(>)/\1 width="32px" height="32px"\2/' \
+	> $@
+out/desktop/icons/extra-icons/breezedark/actions/32/disconnect-quassel.svg: action.disconnect.svg
+	mkdir -p $(@D)
+	cat $< \
+	| sed -r 's/(id="ring")/\1 fill="#$(COLOR_BREEZEDARK_DISCONNECT_RING)"/' \
+	| sed -r 's/(id="globe")/\1 fill="#$(COLOR_BREEZEDARK_DISCONNECT_GLOBE)"/' \
+	| sed -r 's/(<svg.*)(>)/\1 width="32px" height="32px"\2/' \
+	> $@
+out/desktop/icons/extra-icons/breezedark/scalable/actions/connect-quassel.svg: action.connect.svg
+	mkdir -p $(@D)
+	cat $< \
+	| sed -r 's/(id="ring")/\1 fill="#$(COLOR_BREEZEDARK_CONNECT_RING)"/' \
+	| sed -r 's/(id="globe")/\1 fill="#$(COLOR_BREEZEDARK_CONNECT_GLOBE)"/' \
+	> $@
+out/desktop/icons/extra-icons/breezedark/scalable/actions/disconnect-quassel.svg: action.disconnect.svg
+	mkdir -p $(@D)
+	cat $< \
+	| sed -r 's/(id="ring")/\1 fill="#$(COLOR_BREEZEDARK_DISCONNECT_RING)"/' \
+	| sed -r 's/(id="globe")/\1 fill="#$(COLOR_BREEZEDARK_DISCONNECT_GLOBE)"/' \
+	> $@
+
+# Status icons
 out/desktop/icons/extra-icons/breezedark/status/24/active-quassel-tray-inverted.svg: status.active.svg
 	mkdir -p $(@D)
 	cat $< \
