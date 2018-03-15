@@ -612,7 +612,7 @@ out/desktop/pics/quassel.png: logo.kde.svg
 	inkscape $< -w 256 -e $@
 out/desktop/pics/quassel.ico: out/desktop/pics/quassel.png
 	mkdir -p $(@D)
-	convert $< $@
+	convert $< -define icon:auto-resize=256,128,64,48,32,22,16 $@
 out/desktop/pics/quassel.icns: out/desktop/pics/quassel.png
 	mkdir -p $(@D)
 	convert $< $@
