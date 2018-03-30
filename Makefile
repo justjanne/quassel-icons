@@ -51,7 +51,8 @@ android: \
  android_web \
  android_adaptive_foreground \
  android_recents \
- android_legacy
+ android_legacy \
+ android_logo
 
 # Play Store icon
 .PHONY: android_web
@@ -108,6 +109,31 @@ out/android/res/mipmap-hdpi/ic_launcher_recents.png: icon.full.svg
 out/android/res/mipmap-mdpi/ic_launcher_recents.png: icon.full.svg
 	mkdir -p $(@D)
 	inkscape $< -w 48 -e $@
+
+
+# Legacy icon
+.PHONY: android_logo
+android_legacy: \
+ out/android/res/mipmap-xxxhdpi/ic_logo.png \
+ out/android/res/mipmap-xxhdpi/ic_logo.png \
+ out/android/res/mipmap-xhdpi/ic_logo.png \
+ out/android/res/mipmap-hdpi/ic_logo.png \
+ out/android/res/mipmap-mdpi/ic_logo.png
+out/android/res/mipmap-xxxhdpi/ic_logo.png: icon.mono.svg
+	mkdir -p $(@D)
+	inkscape $< -w 96 -e $@
+out/android/res/mipmap-xxhdpi/ic_logo.png: icon.mono.svg
+	mkdir -p $(@D)
+	inkscape $< -w 72 -e $@
+out/android/res/mipmap-xhdpi/ic_logo.png: icon.mono.svg
+	mkdir -p $(@D)
+	inkscape $< -w 48 -e $@
+out/android/res/mipmap-hdpi/ic_logo.png: icon.mono.svg
+	mkdir -p $(@D)
+	inkscape $< -w 36 -e $@
+out/android/res/mipmap-mdpi/ic_logo.png: icon.mono.svg
+	mkdir -p $(@D)
+	inkscape $< -w 24 -e $@
 
 
 # Legacy icon
