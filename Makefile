@@ -52,6 +52,7 @@ android: \
  android_adaptive_foreground \
  android_recents \
  android_legacy \
+ android_splash \
  android_logo
 
 # Play Store icon
@@ -65,50 +66,43 @@ out/android/ic_launcher.web.png: logo.android.svg
 # Adaptive icon foreground
 .PHONY: android_adaptive_foreground
 android_adaptive_foreground: \
- out/android/res/mipmap-xxxhdpi/ic_launcher_foreground.png \
- out/android/res/mipmap-xxhdpi/ic_launcher_foreground.png \
- out/android/res/mipmap-xhdpi/ic_launcher_foreground.png \
- out/android/res/mipmap-hdpi/ic_launcher_foreground.png \
- out/android/res/mipmap-mdpi/ic_launcher_foreground.png
-out/android/res/mipmap-xxxhdpi/ic_launcher_foreground.png: logo.android_fg.svg
+ out/android/res/mipmap-nodpi/ic_launcher_foreground.png
+out/android/res/mipmap-nodpi/ic_launcher_foreground.png: logo.android_fg.svg
 	mkdir -p $(@D)
-	inkscape $< -w 192 -e $@
-out/android/res/mipmap-xxhdpi/ic_launcher_foreground.png: logo.android_fg.svg
-	mkdir -p $(@D)
-	inkscape $< -w 144 -e $@
-out/android/res/mipmap-xhdpi/ic_launcher_foreground.png: logo.android_fg.svg
-	mkdir -p $(@D)
-	inkscape $< -w 96 -e $@
-out/android/res/mipmap-hdpi/ic_launcher_foreground.png: logo.android_fg.svg
-	mkdir -p $(@D)
-	inkscape $< -w 72 -e $@
-out/android/res/mipmap-mdpi/ic_launcher_foreground.png: logo.android_fg.svg
-	mkdir -p $(@D)
-	inkscape $< -w 48 -e $@
+	inkscape $< -w 432 -e $@
 
 # Recents icon
 .PHONY: android_recents
 android_recents: \
- out/android/res/mipmap-xxxhdpi/ic_launcher_recents.png \
- out/android/res/mipmap-xxhdpi/ic_launcher_recents.png \
- out/android/res/mipmap-xhdpi/ic_launcher_recents.png \
- out/android/res/mipmap-hdpi/ic_launcher_recents.png \
- out/android/res/mipmap-mdpi/ic_launcher_recents.png
-out/android/res/mipmap-xxxhdpi/ic_launcher_recents.png: icon.full.svg
+ out/android/res/mipmap-nodpi/ic_launcher_recents.png
+out/android/res/mipmap-nodpi/ic_launcher_recents.png: icon.full.svg
+	mkdir -p $(@D)
+	inkscape $< -w 432 -e $@
+
+
+# Splash icon
+.PHONY: android_splash
+android_splash: \
+ out/android/res/drawable-xxxhdpi/ic_splash.png \
+ out/android/res/drawable-xxhdpi/ic_splash.png \
+ out/android/res/drawable-xhdpi/ic_splash.png \
+ out/android/res/drawable-hdpi/ic_splash.png \
+ out/android/res/drawable-mdpi/ic_splash.png
+out/android/res/drawable-xxxhdpi/ic_splash.png: icon.full.svg
+	mkdir -p $(@D)
+	inkscape $< -w 384 -e $@
+out/android/res/drawable-xxhdpi/ic_splash.png: icon.full.svg
+	mkdir -p $(@D)
+	inkscape $< -w 288 -e $@
+out/android/res/drawable-xhdpi/ic_splash.png: icon.full.svg
 	mkdir -p $(@D)
 	inkscape $< -w 192 -e $@
-out/android/res/mipmap-xxhdpi/ic_launcher_recents.png: icon.full.svg
+out/android/res/drawable-hdpi/ic_splash.png: icon.full.svg
 	mkdir -p $(@D)
 	inkscape $< -w 144 -e $@
-out/android/res/mipmap-xhdpi/ic_launcher_recents.png: icon.full.svg
+out/android/res/drawable-mdpi/ic_splash.png: icon.full.svg
 	mkdir -p $(@D)
-	inkscape $< -w 96 -e $@
-out/android/res/mipmap-hdpi/ic_launcher_recents.png: icon.full.svg
-	mkdir -p $(@D)
-	inkscape $< -w 72 -e $@
-out/android/res/mipmap-mdpi/ic_launcher_recents.png: icon.full.svg
-	mkdir -p $(@D)
-	inkscape $< -w 48 -e $@
+	inkscape $< -w 115 -e $@
 
 
 # Legacy icon
@@ -139,24 +133,24 @@ out/android/res/mipmap-mdpi/ic_logo.png: icon.mono.svg
 # Legacy icon
 .PHONY: android_legacy
 android_legacy: \
- out/android/res/mipmap-xxxhdpi/ic_launcher.png \
- out/android/res/mipmap-xxhdpi/ic_launcher.png \
- out/android/res/mipmap-xhdpi/ic_launcher.png \
- out/android/res/mipmap-hdpi/ic_launcher.png \
- out/android/res/mipmap-mdpi/ic_launcher.png
-out/android/res/mipmap-xxxhdpi/ic_launcher.png: logo.android.svg
+ out/android/res/mipmap-xxxhdpi/ic_launcher_legacy.png \
+ out/android/res/mipmap-xxhdpi/ic_launcher_legacy.png \
+ out/android/res/mipmap-xhdpi/ic_launcher_legacy.png \
+ out/android/res/mipmap-hdpi/ic_launcher_legacy.png \
+ out/android/res/mipmap-mdpi/ic_launcher_legacy.png
+out/android/res/mipmap-xxxhdpi/ic_launcher_legacy.png: logo.android.svg
 	mkdir -p $(@D)
 	inkscape $< -w 192 -e $@
-out/android/res/mipmap-xxhdpi/ic_launcher.png: logo.android.svg
+out/android/res/mipmap-xxhdpi/ic_launcher_legacy.png: logo.android.svg
 	mkdir -p $(@D)
 	inkscape $< -w 144 -e $@
-out/android/res/mipmap-xhdpi/ic_launcher.png: logo.android.svg
+out/android/res/mipmap-xhdpi/ic_launcher_legacy.png: logo.android.svg
 	mkdir -p $(@D)
 	inkscape $< -w 96 -e $@
-out/android/res/mipmap-hdpi/ic_launcher.png: logo.android.svg
+out/android/res/mipmap-hdpi/ic_launcher_legacy.png: logo.android.svg
 	mkdir -p $(@D)
 	inkscape $< -w 72 -e $@
-out/android/res/mipmap-mdpi/ic_launcher.png: logo.android.svg
+out/android/res/mipmap-mdpi/ic_launcher_legacy.png: logo.android.svg
 	mkdir -p $(@D)
 	inkscape $< -w 48 -e $@
 

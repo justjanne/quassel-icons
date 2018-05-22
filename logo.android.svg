@@ -2,16 +2,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108 108" version="1.1">
   <defs>
     <linearGradient id="gradientBackground" x2="5" gradientUnits="userSpaceOnUse" y2="103">
-      <stop id="gradientBackgroundStart" stop-color="#2883f2" offset="0"/>
-      <stop id="gradientBackgroundEnd" stop-color="#0c56b2" offset="1"/>
+      <stop id="gradientBackgroundStart" stop-color="#0291e7" offset="0"/>
+      <stop id="gradientBackgroundEnd" stop-color="#124e99" offset="1"/>
     </linearGradient>
     <radialGradient id="gradientLongShadow" r="54" cx="54" cy="54" gradientUnits="userSpaceOnUse">
       <stop stop-color="#1a237e" stop-opacity="0.2" offset="0.5"/>
       <stop stop-color="#1a237e" stop-opacity="0" offset="1"/>
     </radialGradient>    
     <radialGradient id="gradientFinish" gradientUnits="userSpaceOnUse" cy="0" cx="0" r="108">
-    <stop stop-color="#fff" stop-opacity="0.1" offset="0"/>
-    <stop stop-color="#fff" stop-opacity="0" offset="1"/>
+      <stop stop-color="#ffffff" stop-opacity="0.2" offset="0"/>
+      <stop stop-color="#ffffff" stop-opacity="0" offset="1"/>
     </radialGradient>
     <filter id="blurShadow" color-interpolation-filters="linearRGB">
       <feGaussianBlur stdDeviation="1.0"/>

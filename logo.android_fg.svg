@@ -4,6 +4,10 @@
     <radialGradient id="gradientLongShadow" r="54" cx="54" cy="54" gradientUnits="userSpaceOnUse">
       <stop stop-color="#1a237e" stop-opacity="0.2" offset="0.5"/>
       <stop stop-color="#1a237e" stop-opacity="0" offset="1"/>
+    </radialGradient>    
+    <radialGradient id="gradientFinish" gradientUnits="userSpaceOnUse" cy="0" cx="0" r="108">
+      <stop stop-color="#ffffff" stop-opacity="0.2" offset="0"/>
+      <stop stop-color="#ffffff" stop-opacity="0" offset="1"/>
     </radialGradient>
     <filter id="blurShadow" color-interpolation-filters="linearRGB">
       <feGaussianBlur stdDeviation="2.0"/>
@@ -13,4 +17,5 @@
   <path filter="url(#blurShadow)" fill-opacity="0.2" fill="#263238" d="M27 54a 27,27 0 1,0 54,0 h-7 a20,20 0 0,1 -40,0 a20,20 0 0,1 40,0 h7 a 27,27 0 1,0 -54,0 M57.34 62.84 a 5.5,5.5 0 1,0 11,0 a 5.5,5.5 0 1,0 -11,0" />
   <path fill="#ffffff" d="M27 54a 27,27 0 1,0 54,0 h-7 a20,20 0 0,1 -40,0 a20,20 0 0,1 40,0 h7 a 27,27 0 1,0 -54,0 M57.34 62.84 a 5.5,5.5 0 1,0 11,0 a 5.5,5.5 0 1,0 -11,0" />
   <path fill="#e5e5e5" d="M34 53.5 v0.5 a 20,20 0 0,1 40,0 v-0.5 a 20,20 0 1,0 -40,0 M27 53.5 v0.5 a 27,27 0 1,0 54,0 v-0.5 a 27,27 0 0,1 -54,0 M57.34 62.34 v0.5 a 5.5,5.5 0 1,0 11,0 v-0.5 a 5.5,5.5 0 0,1 -11,0" />
+  <path fill="url(#gradientFinish)" d="M 0,0 v108 h108 v-108 h-108 Z"/>
 </svg>
