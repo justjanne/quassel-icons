@@ -308,7 +308,7 @@ out/desktop/icons/extra-icons/breeze/status/24/inactive-quassel.svg: logo.kde.sv
 	| sed -r 's/(id="gradientBackgroundEnd" stop-color=)"#[0-9a-fA-F]{0,6}"/\1"#$(COLOR_BREEZE_INACTIVE_END)"/' \
 	| sed -r 's/(<svg.*)(>)/\1 width="24px" height="24px"\2/' \
 	> $@
-out/desktop/icons/extra-icons/breeze/status/24/message-quassel-tray-inverted.svg: status.active.svg
+out/desktop/icons/extra-icons/breeze/status/24/message-quassel-tray-inverted.svg: status.message.svg
 	mkdir -p $(@D)
 	cat $< \
 	| sed -r 's/(id="ring")/\1 fill="#$(COLOR_BREEZE_TRAY_MESSAGE_INVERTED_RING)"/' \
@@ -364,7 +364,7 @@ out/desktop/icons/extra-icons/breeze/status/64/inactive-quassel.svg: logo.kde.sv
 	| sed -r 's/(id="gradientBackgroundEnd" stop-color=)"#[0-9a-fA-F]{0,6}"/\1"#$(COLOR_BREEZE_INACTIVE_END)"/' \
 	| sed -r 's/(<svg.*)(>)/\1 width="64px" height="64px"\2/' \
 	> $@
-out/desktop/icons/extra-icons/breeze/status/64/message-quassel-tray-inverted.svg: status.active.svg
+out/desktop/icons/extra-icons/breeze/status/64/message-quassel-tray-inverted.svg: status.message.svg
 	mkdir -p $(@D)
 	cat $< \
 	| sed -r 's/(id="ring")/\1 fill="#$(COLOR_BREEZE_TRAY_MESSAGE_INVERTED_RING)"/' \
@@ -415,7 +415,7 @@ out/desktop/icons/extra-icons/breeze/scalable/status/inactive-quassel.svg: logo.
 	| sed -r 's/(id="gradientBackgroundStart" stop-color=)"#[0-9a-fA-F]{0,6}"/\1"#$(COLOR_BREEZE_INACTIVE_START)"/' \
 	| sed -r 's/(id="gradientBackgroundEnd" stop-color=)"#[0-9a-fA-F]{0,6}"/\1"#$(COLOR_BREEZE_INACTIVE_END)"/' \
 	> $@
-out/desktop/icons/extra-icons/breeze/scalable/status/message-quassel-tray-inverted.svg: status.active.svg
+out/desktop/icons/extra-icons/breeze/scalable/status/message-quassel-tray-inverted.svg: status.message.svg
 	mkdir -p $(@D)
 	cat $< \
 	| sed -r 's/(id="ring")/\1 fill="#$(COLOR_BREEZE_TRAY_MESSAGE_INVERTED_RING)"/' \
@@ -578,7 +578,7 @@ out/desktop/icons/extra-icons/breezedark/status/24/inactive-quassel.svg: logo.kd
 	| sed -r 's/(id="gradientBackgroundEnd" stop-color=)"#[0-9a-fA-F]{0,6}"/\1"#$(COLOR_BREEZEDARK_INACTIVE_END)"/' \
 	| sed -r 's/(<svg.*)(>)/\1 width="24px" height="24px"\2/' \
 	> $@
-out/desktop/icons/extra-icons/breezedark/status/24/message-quassel-tray-inverted.svg: status.active.svg
+out/desktop/icons/extra-icons/breezedark/status/24/message-quassel-tray-inverted.svg: status.message.svg
 	mkdir -p $(@D)
 	cat $< \
 	| sed -r 's/(id="ring")/\1 fill="#$(COLOR_BREEZEDARK_TRAY_MESSAGE_INVERTED_RING)"/' \
@@ -634,7 +634,7 @@ out/desktop/icons/extra-icons/breezedark/status/64/inactive-quassel.svg: logo.kd
 	| sed -r 's/(id="gradientBackgroundEnd" stop-color=)"#[0-9a-fA-F]{0,6}"/\1"#$(COLOR_BREEZEDARK_INACTIVE_END)"/' \
 	| sed -r 's/(<svg.*)(>)/\1 width="64px" height="64px"\2/' \
 	> $@
-out/desktop/icons/extra-icons/breezedark/status/64/message-quassel-tray-inverted.svg: status.active.svg
+out/desktop/icons/extra-icons/breezedark/status/64/message-quassel-tray-inverted.svg: status.message.svg
 	mkdir -p $(@D)
 	cat $< \
 	| sed -r 's/(id="ring")/\1 fill="#$(COLOR_BREEZEDARK_TRAY_MESSAGE_INVERTED_RING)"/' \
@@ -685,7 +685,7 @@ out/desktop/icons/extra-icons/breezedark/scalable/status/inactive-quassel.svg: l
 	| sed -r 's/(id="gradientBackgroundStart" stop-color=)"#[0-9a-fA-F]{0,6}"/\1"#$(COLOR_BREEZEDARK_INACTIVE_START)"/' \
 	| sed -r 's/(id="gradientBackgroundEnd" stop-color=)"#[0-9a-fA-F]{0,6}"/\1"#$(COLOR_BREEZEDARK_INACTIVE_END)"/' \
 	> $@
-out/desktop/icons/extra-icons/breezedark/scalable/status/message-quassel-tray-inverted.svg: status.active.svg
+out/desktop/icons/extra-icons/breezedark/scalable/status/message-quassel-tray-inverted.svg: status.message.svg
 	mkdir -p $(@D)
 	cat $< \
 	| sed -r 's/(id="ring")/\1 fill="#$(COLOR_BREEZEDARK_TRAY_MESSAGE_INVERTED_RING)"/' \
