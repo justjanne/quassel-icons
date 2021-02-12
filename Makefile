@@ -61,7 +61,7 @@ android_web: \
  out/android/ic_launcher.web.png
 out/android/ic_launcher.web.png: logo.full.svg
 	mkdir -p $(@D)
-	inkscape $< -w 512 -e $@
+	inkscape $< -w 512 -o $@
 
 # Adaptive icon foreground
 .PHONY: android_adaptive_foreground
@@ -69,7 +69,7 @@ android_adaptive_foreground: \
  out/android/res/mipmap-nodpi/ic_launcher_foreground.png
 out/android/res/mipmap-nodpi/ic_launcher_foreground.png: logo.android_fg.svg
 	mkdir -p $(@D)
-	inkscape $< -w 432 -e $@
+	inkscape $< -w 432 -o $@
 
 # Recents icon
 .PHONY: android_recents
@@ -77,7 +77,7 @@ android_recents: \
  out/android/res/mipmap-nodpi/ic_launcher_recents.png
 out/android/res/mipmap-nodpi/ic_launcher_recents.png: icon.full.svg
 	mkdir -p $(@D)
-	inkscape $< -w 432 -e $@
+	inkscape $< -w 432 -o $@
 
 
 # Splash icon
@@ -90,19 +90,19 @@ android_splash: \
  out/android/res/drawable-mdpi/ic_splash.png
 out/android/res/drawable-xxxhdpi/ic_splash.png: icon.full.svg
 	mkdir -p $(@D)
-	inkscape $< -w 384 -e $@
+	inkscape $< -w 384 -o $@
 out/android/res/drawable-xxhdpi/ic_splash.png: icon.full.svg
 	mkdir -p $(@D)
-	inkscape $< -w 288 -e $@
+	inkscape $< -w 288 -o $@
 out/android/res/drawable-xhdpi/ic_splash.png: icon.full.svg
 	mkdir -p $(@D)
-	inkscape $< -w 192 -e $@
+	inkscape $< -w 192 -o $@
 out/android/res/drawable-hdpi/ic_splash.png: icon.full.svg
 	mkdir -p $(@D)
-	inkscape $< -w 144 -e $@
+	inkscape $< -w 144 -o $@
 out/android/res/drawable-mdpi/ic_splash.png: icon.full.svg
 	mkdir -p $(@D)
-	inkscape $< -w 115 -e $@
+	inkscape $< -w 115 -o $@
 
 
 # Legacy icon
@@ -115,19 +115,19 @@ android_legacy: \
  out/android/res/mipmap-mdpi/ic_logo.png
 out/android/res/mipmap-xxxhdpi/ic_logo.png: icon.mono.svg
 	mkdir -p $(@D)
-	inkscape $< -w 96 -e $@
+	inkscape $< -w 96 -o $@
 out/android/res/mipmap-xxhdpi/ic_logo.png: icon.mono.svg
 	mkdir -p $(@D)
-	inkscape $< -w 72 -e $@
+	inkscape $< -w 72 -o $@
 out/android/res/mipmap-xhdpi/ic_logo.png: icon.mono.svg
 	mkdir -p $(@D)
-	inkscape $< -w 48 -e $@
+	inkscape $< -w 48 -o $@
 out/android/res/mipmap-hdpi/ic_logo.png: icon.mono.svg
 	mkdir -p $(@D)
-	inkscape $< -w 36 -e $@
+	inkscape $< -w 36 -o $@
 out/android/res/mipmap-mdpi/ic_logo.png: icon.mono.svg
 	mkdir -p $(@D)
-	inkscape $< -w 24 -e $@
+	inkscape $< -w 24 -o $@
 
 
 # Legacy icon
@@ -140,19 +140,19 @@ android_legacy: \
  out/android/res/mipmap-mdpi/ic_launcher_legacy.png
 out/android/res/mipmap-xxxhdpi/ic_launcher_legacy.png: logo.android.svg
 	mkdir -p $(@D)
-	inkscape $< -w 192 -e $@
+	inkscape $< -w 192 -o $@
 out/android/res/mipmap-xxhdpi/ic_launcher_legacy.png: logo.android.svg
 	mkdir -p $(@D)
-	inkscape $< -w 144 -e $@
+	inkscape $< -w 144 -o $@
 out/android/res/mipmap-xhdpi/ic_launcher_legacy.png: logo.android.svg
 	mkdir -p $(@D)
-	inkscape $< -w 96 -e $@
+	inkscape $< -w 96 -o $@
 out/android/res/mipmap-hdpi/ic_launcher_legacy.png: logo.android.svg
 	mkdir -p $(@D)
-	inkscape $< -w 72 -e $@
+	inkscape $< -w 72 -o $@
 out/android/res/mipmap-mdpi/ic_launcher_legacy.png: logo.android.svg
 	mkdir -p $(@D)
-	inkscape $< -w 48 -e $@
+	inkscape $< -w 48 -o $@
 
 #######################################
 # Desktop icons                       #
@@ -715,22 +715,22 @@ hicolor: \
 
 out/desktop/icons/hicolor/128x128/apps/quassel.png: logo.kde.svg
 	mkdir -p $(@D)
-	inkscape $< -w 128 -e $@
+	inkscape $< -w 128 -o $@
 out/desktop/icons/hicolor/64x64/apps/quassel.png: logo.kde.svg
 	mkdir -p $(@D)
-	inkscape $< -w 64 -e $@
+	inkscape $< -w 64 -o $@
 out/desktop/icons/hicolor/48x48/apps/quassel.png: logo.kde.svg
 	mkdir -p $(@D)
-	inkscape $< -w 48 -e $@
+	inkscape $< -w 48 -o $@
 out/desktop/icons/hicolor/32x32/apps/quassel.png: logo.kde.svg
 	mkdir -p $(@D)
-	inkscape $< -w 32 -e $@
+	inkscape $< -w 32 -o $@
 out/desktop/icons/hicolor/22x22/apps/quassel.png: logo.kde.svg
 	mkdir -p $(@D)
-	inkscape $< -w 22 -e $@
+	inkscape $< -w 22 -o $@
 out/desktop/icons/hicolor/16x16/apps/quassel.png: logo.kde.svg
 	mkdir -p $(@D)
-	inkscape $< -w 16 -e $@
+	inkscape $< -w 16 -o $@
 
 .PHONY: icons
 icons: \
@@ -748,37 +748,37 @@ icons: \
 
 out/desktop/pics/quassel.png: logo.kde.svg
 	mkdir -p $(@D)
-	inkscape $< -w 1024 -e $@
+	inkscape $< -w 1024 -o $@
 out/desktop/pics/quassel.ico: out/desktop/pics/quassel.png
 	mkdir -p $(@D)
 	convert $< -define icon:auto-resize=256,128,64,48,32,22,16 $@
 out/desktop/pics/iconset/icon_16x16.png: logo.macOS.svg
 	mkdir -p $(@D)
-	inkscape $< -w 16 -e $@
+	inkscape $< -w 16 -o $@
 out/desktop/pics/iconset/icon_16x16@2x.png: logo.macOS.svg
 	mkdir -p $(@D)
-	inkscape $< -w 32 -e $@
+	inkscape $< -w 32 -o $@
 out/desktop/pics/iconset/icon_32x32.png: out/desktop/pics/iconset/icon_16x16@2x.png
 	cp $< $@
 out/desktop/pics/iconset/icon_32x32@2x.png: logo.macOS.svg
 	mkdir -p $(@D)
-	inkscape $< -w 64 -e $@
+	inkscape $< -w 64 -o $@
 out/desktop/pics/iconset/icon_128x128.png: logo.macOS.svg
 	mkdir -p $(@D)
-	inkscape $< -w 128 -e $@
+	inkscape $< -w 128 -o $@
 out/desktop/pics/iconset/icon_128x128@2x.png: logo.macOS.svg
 	mkdir -p $(@D)
-	inkscape $< -w 256 -e $@
+	inkscape $< -w 256 -o $@
 out/desktop/pics/iconset/icon_256x256.png: out/desktop/pics/iconset/icon_128x128@2x.png
 	cp $< $@
 out/desktop/pics/iconset/icon_256x256@2x.png: logo.macOS.svg
 	mkdir -p $(@D)
-	inkscape $< -w 512 -e $@
+	inkscape $< -w 512 -o $@
 out/desktop/pics/iconset/icon_512x512.png: out/desktop/pics/iconset/icon_256x256@2x.png
 	cp $< $@
 out/desktop/pics/iconset/icon_512x512@2x.png: logo.macOS.svg
 	mkdir -p $(@D)
-	inkscape $< -w 1024 -e $@
+	inkscape $< -w 1024 -o $@
 
 #######################################
 # Web icons                           #
@@ -795,7 +795,7 @@ out/web/favicon.ico: out/web/favicon.png
 	convert $< $@
 out/web/favicon.png: out/web/favicon.svg
 	mkdir -p $(@D)
-	inkscape $< -w 256 -e $@
+	inkscape $< -w 256 -o $@
 out/web/favicon.svg: logo.full.svg
 	mkdir -p $(@D)
 	cp $< $@
