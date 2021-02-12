@@ -758,7 +758,7 @@ out/desktop/pics/quassel.iconset/icon_16x16.png: logo.macOS.svg
 out/desktop/pics/quassel.iconset/icon_16x16@2x.png: logo.macOS.svg
 	mkdir -p $(@D)
 	inkscape $< -w 32 -o $@
-out/desktop/pics/quassel.iconset/icon_32x32.png: out/desktop/pics/iconset/icon_16x16@2x.png
+out/desktop/pics/quassel.iconset/icon_32x32.png: out/desktop/pics/quassel.iconset/icon_16x16@2x.png
 	cp $< $@
 out/desktop/pics/quassel.iconset/icon_32x32@2x.png: logo.macOS.svg
 	mkdir -p $(@D)
@@ -769,12 +769,12 @@ out/desktop/pics/quassel.iconset/icon_128x128.png: logo.macOS.svg
 out/desktop/pics/quassel.iconset/icon_128x128@2x.png: logo.macOS.svg
 	mkdir -p $(@D)
 	inkscape $< -w 256 -o $@
-out/desktop/pics/quassel.iconset/icon_256x256.png: out/desktop/pics/iconset/icon_128x128@2x.png
+out/desktop/pics/quassel.iconset/icon_256x256.png: out/desktop/pics/quassel.iconset/icon_128x128@2x.png
 	cp $< $@
 out/desktop/pics/quassel.iconset/icon_256x256@2x.png: logo.macOS.svg
 	mkdir -p $(@D)
 	inkscape $< -w 512 -o $@
-out/desktop/pics/quassel.iconset/icon_512x512.png: out/desktop/pics/iconset/icon_256x256@2x.png
+out/desktop/pics/quassel.iconset/icon_512x512.png: out/desktop/pics/quassel.iconset/icon_256x256@2x.png
 	cp $< $@
 out/desktop/pics/quassel.iconset/icon_512x512@2x.png: logo.macOS.svg
 	mkdir -p $(@D)
