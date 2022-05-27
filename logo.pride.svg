@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76 76" version="1.1">
+  <defs>
+    <radialGradient id="gradientLongShadow" r="38" cx="38" cy="38" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1a237e" stop-opacity="0.2" offset="0.71"/>
+      <stop stop-color="#1a237e" stop-opacity="0" offset="1"/>
+    </radialGradient>
+    <filter id="blurShadow" color-interpolation-filters="linearRGB">
+      <feGaussianBlur stdDeviation="2.0"/>
+    </filter>
+  </defs>
+  <path d="m-38 38 76-76 17.251 17.251-76 76z" fill="#b85cb3"/>
+  <path d="m-20.746 55.254 76-76 10.374 10.374-76 76z" fill="#595dfc"/>
+  <path d="m-10.372 65.628 76-76 10.374 10.374-76 76z" fill="#5cb559"/>
+  <path d="m0.001672 76.002 76-76 10.374 10.374-76 76z" fill="#feff5c"/>
+  <path d="m10.376 86.376 76-76 10.374 10.374-76 76z" fill="#feb45b"/>
+  <path d="m20.749 96.749 76-76 17.251 17.251-76 76z" fill="#fd5a5f"/>
+  <path fill="url(#gradientLongShadow)" d="M18.91 57.09 A 27,27 0 0,1 57.09,18.91 L 76,37.82 76,76 38.82,76" />
+  <path filter="url(#blurShadow)" fill-opacity="0.2" fill="#263238" d="M11 38a 27,27 0 1,0 54,0 h-7 a20,20 0 0,1 -40,0 a20,20 0 0,1 40,0 h7 a 27,27 0 1,0 -54,0 M41.34 46.84 a 5.5,5.5 0 1,0 11,0 a 5.5,5.5 0 1,0 -11,0" />
+  <path fill="#ffffff" d="M11 38a 27,27 0 1,0 54,0 h-7 a20,20 0 0,1 -40,0 a20,20 0 0,1 40,0 h7 a 27,27 0 1,0 -54,0 M41.34 46.84 a 5.5,5.5 0 1,0 11,0 a 5.5,5.5 0 1,0 -11,0" />
+  <path fill="#e5e5e5" d="M18 37.5 v0.5 a 20,20 0 0,1 40,0 v-0.5 a 20,20 0 1,0 -40,0 M11 37.5 v0.5 a 27,27 0 1,0 54,0 v-0.5 a 27,27 0 0,1 -54,0 M41.34 46.34 v0.5 a 5.5,5.5 0 1,0 11,0 v-0.5 a 5.5,5.5 0 0,1 -11,0" />
+</svg>

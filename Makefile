@@ -40,6 +40,8 @@ COLOR_BREEZEDARK_TRAY_MESSAGE_INVERTED_GLOBE := ff0000
 COLOR_BREEZEDARK_TRAY_MESSAGE_RING := bf1d1d
 COLOR_BREEZEDARK_TRAY_MESSAGE_GLOBE := bf1d1d
 
+LOGO_FULL := logo.full.svg
+
 .PHONY: all
 all: android desktop web
 
@@ -786,6 +788,7 @@ out/desktop/pics/quassel.iconset/icon_512x512@2x.png: logo.macOS.svg
 
 .PHONY: web
 web: \
+ out/web/icon.png \
  out/web/favicon.ico \
  out/web/favicon.png \
  out/web/favicon.svg
@@ -796,6 +799,9 @@ out/web/favicon.ico: out/web/favicon.png
 out/web/favicon.png: out/web/favicon.svg
 	mkdir -p $(@D)
 	inkscape $< -w 256 -o $@
-out/web/favicon.svg: logo.full.svg
+out/web/favicon.svg: $(LOGO_FULL)
 	mkdir -p $(@D)
 	cp $< $@
+out/web/icon.png: $(LOGO_FULL)
+	mkdir -p $(@D)
+	inkscape $< -w 512 -o $@
