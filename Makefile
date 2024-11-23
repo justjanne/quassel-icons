@@ -90,21 +90,21 @@ android_splash: \
  out/android/res/drawable-xhdpi/ic_splash.png \
  out/android/res/drawable-hdpi/ic_splash.png \
  out/android/res/drawable-mdpi/ic_splash.png
-out/android/res/drawable-xxxhdpi/ic_splash.png: icon.full.svg
+out/android/res/drawable-xxxhdpi/ic_splash.png: logo.splash.svg
 	mkdir -p $(@D)
-	inkscape $< -w 384 -o $@
-out/android/res/drawable-xxhdpi/ic_splash.png: icon.full.svg
+	inkscape $< -w 1152 -o $@
+out/android/res/drawable-xxhdpi/ic_splash.png: logo.splash.svg
+	mkdir -p $(@D)
+	inkscape $< -w 864 -o $@
+out/android/res/drawable-xhdpi/ic_splash.png: logo.splash.svg
+	mkdir -p $(@D)
+	inkscape $< -w 576 -o $@
+out/android/res/drawable-hdpi/ic_splash.png: logo.splash.svg
+	mkdir -p $(@D)
+	inkscape $< -w 432 -o $@
+out/android/res/drawable-mdpi/ic_splash.png: logo.splash.svg
 	mkdir -p $(@D)
 	inkscape $< -w 288 -o $@
-out/android/res/drawable-xhdpi/ic_splash.png: icon.full.svg
-	mkdir -p $(@D)
-	inkscape $< -w 192 -o $@
-out/android/res/drawable-hdpi/ic_splash.png: icon.full.svg
-	mkdir -p $(@D)
-	inkscape $< -w 144 -o $@
-out/android/res/drawable-mdpi/ic_splash.png: icon.full.svg
-	mkdir -p $(@D)
-	inkscape $< -w 115 -o $@
 
 
 # Legacy icon
